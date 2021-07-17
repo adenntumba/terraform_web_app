@@ -19,6 +19,5 @@ terraform {
     storage_account_name = "savestorageterraform"
     container_name       = "state-terraform"
     key                  = "webapp.terraform.tfstate"
-    access_key           = "${tf_access_key}"
   }
 }
