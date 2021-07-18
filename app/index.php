@@ -2,7 +2,7 @@
  <head>
   <title>Index - PHP</title>
  </head>
- <body style="background-color:powderblue;">
+ <body style="background-color:#FAC091;">
  <?php 
  echo "<center><h1>MENTORIA IaC</h1></center>";
  echo "<center><h3>Aprenda de forma prática em projetos reais</h3></center>"; 
