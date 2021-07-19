@@ -1,5 +1,5 @@
   
-  name: Build and deploy PHP app to Azure Web App - atappweb(Staging)
+  name: Build e deploy PHP app para Azure Web App - atappweb(Staging)
   
   on:
     push:
@@ -29,7 +29,7 @@
           if: steps.check_files.outputs.files_exists == 'true'
           run: composer validate --no-check-publish && composer install --prefer-dist --no-progress
         
-        - name: Upload artifact for deployment job
+        - name: Upload do artifact para o deployment job
           uses: actions/upload-artifact@v2
           with:
             name: php-app
@@ -43,12 +43,12 @@
         url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
   
       steps:
-        - name: Download artifact from build job
+        - name: Download artifact do build job
           uses: actions/download-artifact@v2
           with:
             name: php-app
   
-        - name: 'Deploy to Azure Web App'
+        - name: 'Deploy para Azure Web App'
           uses: azure/webapps-deploy@v2
           id: deploy-to-webapp
           with:
