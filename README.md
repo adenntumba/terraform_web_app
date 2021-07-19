@@ -9,6 +9,7 @@ Este projeto cria os seguintes recursos no Azure:
 * App Service Plan
 * Web App 
 * Slot Swap (Staging e Prod)
+* CI/CD 
 
 A arquitetura final do projeto ficará da seguinte forma:
 ![WebApp](https://user-images.githubusercontent.com/34435675/126075054-2fb4f0e0-db45-4b81-97bd-1075b5189f29.png)
@@ -16,4 +17,7 @@ A arquitetura final do projeto ficará da seguinte forma:
 # Projeto 
 ![webapp](https://user-images.githubusercontent.com/34435675/126084387-4e85252b-2494-4817-8427-a7db2bb0dd36.gif)
 
+# Referência 
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/app_service
 
+https://docs.microsoft.com/en-us/azure///////app-service/deploy-staging-slots
